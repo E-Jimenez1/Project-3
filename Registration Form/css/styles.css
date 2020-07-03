@@ -1,7 +1,6 @@
 
 * {
     box-sizing: border-box;
-    border: 1px red solid;
 }
 
 body {
@@ -106,12 +105,16 @@ textarea {
     margin-top: 15px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=tel],
+input[type=email] {
     transition: ease-in-out,.25s ease-in-out;
 }
   
-input[type=text]:focus {
-    width: 102%;
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    width: 101%;
 }
 
 button {
@@ -133,7 +136,7 @@ footer {
 
 /* Media Queries----------*/
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     .about,
     .thin,
@@ -150,6 +153,6 @@ footer {
 
     .entry input,
     .entry select {
-     width: 80%;
+     width: 65%;
     }
 }
