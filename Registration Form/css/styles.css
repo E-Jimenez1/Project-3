@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #58615d;
+}
+
+.main-head {
+    background: #02474f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;   
+}
+
+.main-head h1 {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 0;  
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding-top: 5px;
+    border-bottom: 5px solid #02474f;
+}
+
+.about p {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.thin {
+    border-bottom: 2px solid #02474f;
+    width: 95%;
+    height: 7px;
+    margin: 0 auto;
+}
+
+h1,
+legend {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #02474f;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+
+form .thin,
+.entry,
+textarea,
+button {
+    width: 100%;  
+}
+
+legend {
+    padding: 30px 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 15px 0;
+}
+
+.entry input,
+.entry select {
+     height: 60px;
+     background: #ebf5f0;
+}
+
+::placeholder,
+select {
+    text-align: right;
+    color: #949c98;
+}
+
+.options,
+textarea {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+input[type=text] {
+    transition: ease-in-out,.25s ease-in-out;
+}
+  
+input[type=text]:focus {
+    width: 102%;
+}
+
+button {
+    padding: 20px;
+    background: #2ab3bf;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    margin: 20px auto;
+    width: 95%;
+}
+
+
+
+/* Media Queries----------*/
+
+@media (min-width: 769px) {
+
+    .about,
+    .thin,
+    form,
+    footer {
+        width: 65%;
+    }
+
+    .entry {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .entry input,
+    .entry select {
+     width: 80%;
+    }
+}
