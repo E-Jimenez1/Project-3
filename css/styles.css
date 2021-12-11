@@ -1,0 +1,163 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    background: #D5EBDB;
+}
+
+.title {
+    background: #004B13;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100%;
+}
+
+.heading,
+.description {
+    margin: .5em auto;
+    text-align: center;
+}
+
+.head_line,
+.break_line,
+.line_break {
+    margin: 1em auto;
+}
+
+.head_line,
+.break_line,
+.description,
+.line_break {
+    max-width: 90%;
+    font-size: 1.3em;
+}
+
+.head_line,
+.line_break {
+    border-top: 3px solid #004B13;
+    margin-bottom: 2px;
+}
+.break_line {
+    border-bottom: 2px dashed #004B13;
+    margin-top: 2px;
+}
+
+fieldset {
+    border: none;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.contact_pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label,
+.contact input,
+.contact select {
+    padding: .5em 0;
+}
+
+.contact input,
+.contact select {
+    text-align: right;
+    padding-right: .5em;
+    background: #fff;
+}
+
+#zip_code {
+    max-width: 50%;
+}
+
+.input-pair {
+    flex-direction: row;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 5px;
+}
+
+label[for="html"],
+label[for="css"],
+label[for="javascript"],
+label[for="html_format"],
+label[for="text_format"] {
+    padding-left: 1em;
+}
+
+#format,
+label[id="topics"] {
+    margin-top: 1em;
+}
+
+textarea {
+    padding: 1.5em;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    padding: 1em;
+    margin: 1em auto;
+    background: #44BB95;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 400;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: #DBDBDB;
+    border-width: 3px;
+    transition-timing-function: linear;
+}
+
+@media (min-width:768px) {
+    .contact_pair {
+        flex-direction: row;
+        margin: 1em;
+        max-width: 90%;
+    }
+
+    .contact label {
+        flex-basis: 25%;
+        margin: auto 0;
+    }
+
+    .contact input,
+    .contact select {
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
+
+    #zip_code {
+    max-width: 25%;
+}
+
+}
+

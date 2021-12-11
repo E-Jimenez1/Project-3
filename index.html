@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Code Review</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="container">
+
+       <header>
+           <div>
+                <h1 class="title">The Code Review</h1>
+           </div>
+           <h1 class="heading">Signup for our newsletter</h1>
+           <p class="description">Get the lastest news on how your code is doing right in your inbox</p>
+           <div class="head_line"></div>
+           <div class="break_line"></div>
+       </header>
+
+       <main>
+           <form action="index.html" method="post">
+                <fieldset class="contact">
+                    <legend>Contact Information</legend>
+
+                    <div class="contact_pair">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required" required>
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="user_email" placeholder="Required" required>
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="phone">Phone Number</label>
+                        <input type="telephone" id="phone" name="user_phone">
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" placeholder="123 Main St.">
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" placeholder="Central City">
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="state">State</label>
+                        <select id="state" name="user_state">
+                            <optgroup>
+                            <option value="" disable selected>Choose State</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new_hampshire">New Hampshire</option>
+                            <option value="new_jersey">New Jersey</option>
+                            <option value="new_mexico">New Mexico</option>
+                            <option value="new_york">New York</option>
+                            <option value="north_carolina">North Carolina</option>
+                            <option value="north_dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode_island">Rhode Island</option>
+                            <option value="south_carolina">South Carolina</option>
+                            <option value="south_dakota">South Dakota</option>
+                            <option value="tennessee">Tennesse</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="west_virginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="contact_pair">
+                        <label for="zip_code">Zip Code</label>
+                        <input type="text" id="zip_code" name="user_zip" placeholder="00000">
+                    </div>
+                </fieldset>
+
+                <div class="line_break"></div>
+
+                <fieldset class="newsletter">
+                    <legend>Newsletter</legend>
+
+                    <label>Select the newsletters you would like to receive</label><br>
+
+                    <div class="input_pair">
+                        <input type="checkbox" id="html" value="interest_html" name="user_interest">
+                        <label for="html">HTML News</label><br>
+                    </div>
+
+                    <div class="input_pair">
+                        <input type="checkbox" id="css" value="interest_css" name="user_interest">
+                        <label for="css">CSS News</label><br>
+                    </div>
+
+                    <div class="input_pair">
+                        <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest">
+                        <label for="javascript">Javascript News</label><br>
+                    </div>
+
+                    <label id="format">Newsletter format</label><br>
+
+                    <div class="input_pair">
+                        <input type="radio" id="html_format" value="html_format" name="format">
+                        <label for="html_format">HTML</label><br>
+                    </div>
+
+                    <div class="input_pair">
+                        <input type="radio" id="text_format" value="text_format" name="format">
+                        <label for="text_format">Plain text</label><br>
+                    </div>
+
+                    <label id="topics">Other topics you'd like to hear about</label><br>
+                    <textarea id="topics" name="topic" placeholder="..." row="15" cols="5"></textarea>
+                </fieldset>
+
+                <button type="submit">Sign Up</button>
+           </form>
+       </main> 
+        
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+
+    </body>
+</html>
