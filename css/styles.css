@@ -79,6 +79,7 @@ legend {
     text-align: right;
     padding-right: .5em;
     background: #fff;
+    transition: border-width 2s, background-color 2s ;
 }
 
 #zip_code {
@@ -103,7 +104,7 @@ label[for="text_format"] {
 }
 
 #format,
-label[id="topic"] {
+label[for="topics"] {
     margin-top: 1em;
 }
 
@@ -134,7 +135,6 @@ textarea:focus,
 select:focus {
     background: #DBDBDB;
     border-width: 3px;
-    transition-timing-function: linear;
 }
 
 @media (min-width:768px) {
